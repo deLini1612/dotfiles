@@ -1,0 +1,7 @@
+
+configuration {
+	show-icons: true;
+	sidebar-mode: true;
+	modi: "drun,run,ssh";
+}
+@theme "~/.config/rofi/flamingo.rasi"
