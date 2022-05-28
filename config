@@ -57,7 +57,7 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
-bindsym $mod+b exec firefox-developer-edition
+bindsym $mod+b exec firefox
 bindsym $mod+f exec pcmanfm
 # bindsym $mod+F3 exec ranger
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
@@ -397,8 +397,8 @@ mode "$mode_gaps_outer" {
 }
 
 # take a screenshot with scrot, put it in Desktop folder
-set $scrot_capture scrot 'screenshot-%Y.%m.%d_%H:%M:%S.png' -e 'mv $f /home/npliinh/Pictures/Screenshot'
-set $scrot_region scrot -s 'screenshot-%Y.%m.%d_%H:%M:%S.png' -e 'mv $f /home/npliinh/Pictures/Screenshot'
+set $scrot_capture scrot 'screenshot-%Y.%m.%d_%H:%M:%S.png' -e 'mv $f /home/nplinh/Pictures/Screenshot'
+set $scrot_region scrot -s 'screenshot-%Y.%m.%d_%H:%M:%S.png' -e 'mv $f /home/nplinh/Pictures/Screenshot'
 set $mode_screenshot Take Screenshot, (Enter)-Full Screenshot, (s)-Select Region
 mode "$mode_screenshot" {
         bindsym Return      exec --no-startup-id $scrot_capture && paplay ~/.i3/sounds/camera-shutter.oga && notify-send "Screenshot saved in your folder", mode "default"
@@ -406,4 +406,3 @@ mode "$mode_screenshot" {
         bindsym Escape      mode "default"
 }
 bindsym Print mode "$mode_screenshot"
-
