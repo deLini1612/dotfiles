@@ -36,7 +36,7 @@
 4. Download font
 5. Install AUR packages using yay: ibus-bamboo
 6. Modify **lxapperance** and update file config
-7. Change time (Avoid conflict with Window time)
+7. Change time (Avoid conflict with Window time): `timedatectl set-local-rtc 1`
 
 ## Tips and some useful command
 1. Command with yay
