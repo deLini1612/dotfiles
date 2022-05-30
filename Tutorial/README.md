@@ -25,6 +25,7 @@
     `exit`
 8. Delete Manjaro: `rmdir /S Z:\efi\manjaro`
 9. Unassign letter Z (as step 7, but use `remove letter=Z` instead of assign)
+10. Change backgrounf: `nitrogen /home/nplinh/Pictures/Wallpaper` (path link of the directory consist image)
 
 ## Must-do things when install Manjaro i3
 1. Update: `pacman -Syu`
