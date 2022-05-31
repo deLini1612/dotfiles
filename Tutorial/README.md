@@ -35,7 +35,7 @@
  
 3. Uninstall Palemoon: `sudo pacman -Rcns palemoon-bin`
 4. Download font
-5. Install AUR packages using yay: ibus-bamboo
+5. Install AUR packages using yay: ibus-bamboo, visual-studio-code-bin
 6. Modify **lxapperance** and update file config
 7. Change time (Avoid conflict with Window time): `timedatectl set-local-rtc 1`
 
