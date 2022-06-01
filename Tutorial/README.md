@@ -5,12 +5,7 @@
 1. Restart pc and go to **"BIOS/UEFI setting"** section and remove Manjaro from Bootable list
 2. Boot to Window, then ***Window+R*** and type **"diskmgmt.msc"**
 3. In **Disk Management**, delete the Volume you use to install Manjaro
-4. Find **"cmd"** in **Start Menu** and run as admin
-5. `bcdedit /enum all` them ***Ctr+F*** and find **"Manjaro"**, copy the code in *identifier* part
-6. `bcdedit /delete {thecode}`
-7. Go to Boot EEFI section of Window and assign hiden letter Z for it (type those code)
-
-   `diskpart`
+4. Go to Boot EEFI section of Window and assign hiden letter Z for it (type those code): ***Window+R*** and type **"diskpart"**
 
    `list disk`
    
@@ -23,9 +18,8 @@
    `assign letter=Z`
    
     `exit`
-8. Delete Manjaro: `rmdir /S Z:\efi\manjaro`
+8. Open cmd (run as admin) and delete Manjaro: `rmdir /S Z:\efi\manjaro`
 9. Unassign letter Z (as step 7, but use `remove letter=Z` instead of assign)
-10. Change backgrounf: `nitrogen /home/nplinh/Pictures/Wallpaper` (path link of the directory consist image)
 
 ## Must-do things when install Manjaro i3
 1. Update: `pacman -Syu`
@@ -38,6 +32,7 @@
 5. Install AUR packages using yay: ibus-bamboo, visual-studio-code-bin
 6. Modify **lxapperance** and update file config
 7. Change time (Avoid conflict with Window time): `timedatectl set-local-rtc 1`
+8. Change background: `nitrogen /home/nplinh/Pictures/Wallpaper` (path link of the directory consist image)
 
 ## Tips and some useful command
 1. Command with yay
