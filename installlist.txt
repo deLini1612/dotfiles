@@ -2,4 +2,3 @@ yay
 firefox
 alacritty
 rofi
-code
