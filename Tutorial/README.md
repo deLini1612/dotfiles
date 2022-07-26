@@ -25,7 +25,7 @@
 1. Update: `pacman -Syu`
 2. Install pkg from **"installlist.txt"** after cd to the directory include txt file
 
-  `sudo pacman -S --needed - < installist.txt`
+  `sudo pacman -S --needed - < installlist.txt`
  
 3. Uninstall Palemoon: `sudo pacman -Rcns palemoon-bin`
 4. Download font
