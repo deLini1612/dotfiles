@@ -34,6 +34,15 @@
 7. Change time (Avoid conflict with Window time): `timedatectl set-local-rtc 1`
 8. Change background: `nitrogen /home/nplinh/Pictures/Wallpaper` (path link of the directory consist image)
 
+## Install miniconda and creat env
+1. Download the [installer](https://docs.conda.io/en/latest/miniconda.html#linux-installers)
+2. Verify your installer hash: `cd \<location> && sha256sum <filename>` with <location> is the location you download the installer, <filename> is the file installer you just downloaded
+3. Open terminal then run 'bash <filename>' with <filename> is the file installer you just downloaded
+4. Follow the prompts on the installer screens
+5. Close and then re-open your terminal, check by run: `conda list`
+6. Creat new env: `conda create -n <name> python=<version>` with <name> is the name of env, <version> is the version of python
+7. Run `conda activate <name>` with <name> is the name of env
+
 ## Tips and some useful command
 1. Command with yay
 * Update pkg: `yay`
