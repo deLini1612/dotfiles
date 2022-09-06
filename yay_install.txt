@@ -1,0 +1,4 @@
+anydesk-bin
+ibus-bamboo
+miniconda3
+visual-studio-code-bin
