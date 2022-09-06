@@ -48,6 +48,7 @@
 * Update pkg: `yay`
 * Remove pkg: `yay -Rs name_of_pkg`
 * Clean: `yay -Yc`
+* Install list of pakage: `yay -S $(cat file_name.txt)`
 
 2. To run multi-command by bash file
 * Creat a .sh file include commands
