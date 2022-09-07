@@ -4,3 +4,4 @@ rofi
 polybar
 fish
 flameshot
+picom
