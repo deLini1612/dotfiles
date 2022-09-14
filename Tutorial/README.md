@@ -29,10 +29,13 @@
  
 3. Uninstall Palemoon: `sudo pacman -Rcns palemoon-bin`
 4. Download font
-5. Install AUR packages using yay: ibus-bamboo, visual-studio-code-bin
+5. Install AUR packages from **"yay_install.txt"** using yay: `yay -S $yay_install.txt`
 6. Modify **lxapperance** and update file config
 7. Change time (Avoid conflict with Window time): `timedatectl set-local-rtc 1`
 8. Change background: `nitrogen /home/nplinh/Pictures/Wallpaper` (path link of the directory consist image)
+9. Linking zscroll to /bin: 
+   - `which zscroll` -> get the path
+   - `sudo ln -s <path> /bin`
 
 ## Install miniconda and creat env
 1. Download the [installer](https://docs.conda.io/en/latest/miniconda.html#linux-installers)
