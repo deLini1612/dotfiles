@@ -2,7 +2,6 @@ anydesk-bin
 ibus-bamboo
 miniconda3
 visual-studio-code-bin
-mpris
-zscroll
+zscroll-git
 playerctl
 betterlockscreen
