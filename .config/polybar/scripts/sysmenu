@@ -48,7 +48,7 @@ MENU="$(rofi -no-lazy-grab -sep "|" -dmenu -i -p 'System :' \
 -color-normal "$BACKGROUND_ALT,$FOREGROUND,$BACKGROUND_ALT,$HIGHLIGHT_BACKGROUND,$HIGHLIGHT_FOREGROUND" \
 -color-active "$BACKGROUND,$MAGENTA,$BACKGROUND_ALT,$HIGHLIGHT_BACKGROUND,$HIGHLIGHT_FOREGROUND" \
 -color-urgent "$BACKGROUND,$YELLOW,$BACKGROUND_ALT,$HIGHLIGHT_BACKGROUND,$HIGHLIGHT_FOREGROUND" \
-<<< "   Lock|   Logout|   Shutdown|   Reboot|  Hibernate|   Suspend|   Switch User")"
+<<< "   Lock|   Logout|   Shutdown|   Reboot|  Hibernate|   Suspend|   Switch")"
 case "$MENU" in
   *Lock) betterlockscreen -l dim ;;
   *Logout) i3exit logout ;;
@@ -56,7 +56,7 @@ case "$MENU" in
   *Reboot) systemctl reboot ;;
   *Hibernate) i3exit hibernate ;;
   *Suspend) i3exit suspend ;;
-  *SwitchUser) i3exit switch_user ;;
+  *Switch) i3exit switch_user ;;
 esac
 
 # More Options
