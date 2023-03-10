@@ -5,3 +5,5 @@ polybar
 fish
 flameshot
 picom
+arandr
+autorandr
