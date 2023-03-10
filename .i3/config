@@ -356,3 +356,5 @@ bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness 
 
 # Lockscreen
 # bindsym $mod+Shift+Delete exec --no-startup-id betterlockscreen -l dim
+
+exec autorandr -c && exec nitrogen --restore
