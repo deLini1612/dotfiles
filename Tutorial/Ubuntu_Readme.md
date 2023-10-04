@@ -15,13 +15,30 @@ Check [git_tutorial](https://docs.github.com/en/authentication/connecting-to-git
    - `cat ~/.ssh/id_ed25519.pub` and copy contents of the id_ed25519.pub file displayed in the terminal to your clipboard
    - Following [tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 5. Testing your SSH connection:
-   - `ssh -T git@github.com
+   - `ssh -T git@github.com`
    -  type `yes`
    - If this message "Hi deLini1612! You've successfully authenticated, but GitHub does not provide shell access." is prompt --> success 
 
-# Theme, Icon, Font installtion
+# Theme, Icon installtion
+- **Theme**: Nordic
+- **Icon**: Papirus
+- Tutorial youtube [link](https://www.youtube.com/watch?v=2BLLMc4C_PA)
+- Install theme step by step:
+     1. `sudo apt install gnome-tweaks`
+     2. Download zip file theme from [website](https://www.gnome-look.org/). Here we will use Nordic-darker version of [Nordic](https://www.gnome-look.org/p/1267246/)
+     3. 
+- Install [Nordic theme for firefox](https://github.com/EliverLara/firefox-nordic-theme/tree/master)
 
 # zsh installation
+- Install zsh
+   - `sudo apt-get update`
+   - `sudo apt-get install zsh -y`
+   - Check for the installation: `which zsh`
+- Install oh-my-zsh:
+   - Install curl: `sudo apt-get install git curl`
+   - `sudo curl -L http://install.ohmyz.sh | sh`
+- Install and enable Custom theme:
+   - edit the `.zshrc`
 
 # Conda installation
 
@@ -73,3 +90,4 @@ You can see [this video](https://www.youtube.com/watch?v=1uJzjvgTQUk&t=715s) or 
 - In Vivado Lisence Manager: choose ***Load lisence*** then choose ***Copy Lisence*** and browse the lisence file you just download
 
 6. **DONE!!!**. Now you can run vivado just by running `vivado` command
+7. **Reload** license: Do step 5 again when you need to reload license
