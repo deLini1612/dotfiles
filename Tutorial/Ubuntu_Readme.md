@@ -15,8 +15,18 @@ Check [git_tutorial](https://docs.github.com/en/authentication/connecting-to-git
    - `cat ~/.ssh/id_ed25519.pub` and copy contents of the id_ed25519.pub file displayed in the terminal to your clipboard
    - Following [tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 5. Testing your SSH connection:
-   - `ssh -T git@github.com <yes>`
-  
+   - `ssh -T git@github.com
+   -  type `yes`
+   - If this message "Hi deLini1612! You've successfully authenticated, but GitHub does not provide shell access." is prompt --> success 
+
+# Theme, Icon, Font installtion
+
+# zsh installation
+
+# Conda installation
+
+# Questasim installation
+
 # Vivado installation
 1. Install some packet
    ```
