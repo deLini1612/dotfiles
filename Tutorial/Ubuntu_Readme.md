@@ -23,11 +23,16 @@ Check [git_tutorial](https://docs.github.com/en/authentication/connecting-to-git
 - **Theme**: Nordic
 - **Icon**: Papirus
 - Tutorial youtube [link](https://www.youtube.com/watch?v=2BLLMc4C_PA)
-- Install theme step by step:
-     1. `sudo apt install gnome-tweaks`
-     2. Download zip file theme from [website](https://www.gnome-look.org/). Here we will use Nordic-darker version of [Nordic](https://www.gnome-look.org/p/1267246/)
-     3. 
-- Install [Nordic theme for firefox](https://github.com/EliverLara/firefox-nordic-theme/tree/master)
+- Download theme:
+   1. `sudo apt install gnome-tweaks`
+   2. Download zip theme file from [website](https://www.gnome-look.org/). Here we will use Nordic-darker version of [Nordic](https://www.gnome-look.org/p/1267246/)
+   3. Create a `.themes` folder in home, then extract the zip theme file to it
+- Download icon: Here I will use papirus icon
+   1. `sudo add-apt-repository ppa:papirus/papirus`
+   2. `sudo apt install papirus-icon-theme`
+- Modify dock
+   1. `sudo apt install dconf-editor`
+   2. Inside dconf-Editor, you can find the dock panel settings by navigating to this schema: _**org > gnome > shell > extensions > dash-to-dock**_
 
 # zsh installation
 - Install zsh
@@ -38,7 +43,15 @@ Check [git_tutorial](https://docs.github.com/en/authentication/connecting-to-git
    - Install curl: `sudo apt-get install git curl`
    - `sudo curl -L http://install.ohmyz.sh | sh`
 - Install and enable Custom theme:
-   - edit the `.zshrc`
+   - Edit the `.zshrc` file as follow: `ZSH_THEME="gallois"`
+- Install zsh-autosuggestions
+   - `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+   - Add the plugin to the list of plugins inside `~/.zshrc`:
+     ```
+      plugins=(git
+      	zsh-autosuggestions
+      	)
+     ```
 
 # Conda installation
 
