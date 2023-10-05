@@ -71,11 +71,19 @@ Check [git_tutorial](https://docs.github.com/en/authentication/connecting-to-git
    sudo apt-get install ibus ibus-bamboo --install-recommends
    ibus restart
    ```
-- Then reboot and go to **Setting -> Region & Language -> Choose + -> Vietnamese -> Vietnamese (Bamboo)** to set ibus-bamboo as default typinh tool
+- Then reboot and go to **Setting -> Region & Language -> Choose + -> Vietnamese -> Vietnamese (Bamboo)** to set ibus-bamboo as default typing tool
 
 # Install free-typing-error vscode
+- Simply download `.deb` directly from [website](https://code.visualstudio.com/) instead of from snap
+- Open downloaded `.deb` file then install it
 
-# Conda installation
+# Miniconda installation
+- Download the installer from [here](https://docs.conda.io/projects/miniconda/en/latest/)
+- Make the miniconda installation script executable then run it (choose yes is asked):
+  ```
+  chmod +x Miniconda3-latest-Linux-x86_64.sh
+  ```
+- Close and reopen your bash --> Successful
 
 # Questasim installation and crack
 - Download zip file questasim (I put in on onedrive) then extract it
@@ -154,7 +162,6 @@ Check [git_tutorial](https://docs.github.com/en/authentication/connecting-to-git
        ```
        export PATH=$PATH:/tools/Xilinx/Vivado/2019.2/bin
        source /tools/Xilinx/Vivado/2019.2/settings64.sh
-       
        ```
    - To install driver cable:
        ```
