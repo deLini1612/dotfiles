@@ -1,3 +1,13 @@
+# Table of contents
+1. [Git quick setup](#git-quick-setup)
+2. [Theme, Icon installtion](#theme-icon-installtion)
+3. [zsh installation](#zsh-installation)
+4. [Install ibus-bamboo for Vietnamese typing](#install-ibus-bamboo-for-vietnamese-typing)
+5. [Install free-typing-error vscode](#install-free-typing-error-vscode)
+6. [Conda installation](#conda-installation)
+7. [Questasim installation and crack](#questasim-installation-and-crack)
+8. [Vivado installation](#vivado-installation)
+
 # Git quick setup
 Check [git_tutorial](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys)
 1. Set up global env:
@@ -53,9 +63,69 @@ Check [git_tutorial](https://docs.github.com/en/authentication/connecting-to-git
       	)
      ```
 
+# Install ibus-bamboo for Vietnamese typing
+- Install ibus-bamboo
+   ```
+   sudo add-apt-repository ppa:bamboo-engine/ibus-bamboo
+   sudo apt-get update
+   sudo apt-get install ibus ibus-bamboo --install-recommends
+   ibus restart
+   ```
+- Then reboot and go to **Setting -> Region & Language -> Choose + -> Vietnamese -> Vietnamese (Bamboo)** to set ibus-bamboo as default typinh tool
+
+# Install free-typing-error vscode
+
 # Conda installation
 
-# Questasim installation
+# Questasim installation and crack
+- Download zip file questasim (I put in on onedrive) then extract it
+- Navigate to `Mentor Graphics QuestaSim 10.7c Linux64` folder, then run:
+  ```
+  chmod +x install.linux64
+  ./install.linux64
+  ```
+- Then install it in GUI app:
+   - Click Install to install it. Then, click Browse to select target location
+   - Select both of releases
+   - Select All Platforms
+   - Select all products
+   - Finally, Agree and Install → Exit
+- Crack questasim:
+   - Copy 3 files (MentorKG.exe, MGLS.DLL, Patch_DownLoadLy.iR.bat) from folder `Crack/Others/2` and Paste in `../questasim/linux_x86_64`
+   - Install wine frome [here](Install wine: https://wiki.winehq.org/Ubuntu)
+   - Open Terminal in linu_x86_64, then run `wine Patch_DownLoadLy.iR.bat`
+        > Note: Install everything if have request
+   - Remove comment 2 first lines in LICENSE.TXT
+   - Add path of your `questasim/` folder to 2nd line as example `VENDOR mgcld /home/delini/questasim/questasim` then Save as `LICENSE.dat` into folder `/questasim`
+   - Add path to `~./zshrc` as the following then `source ~./zshrc` 
+     ```
+     export PATH=$PATH:/home/delini/questasim/questasim/bin/
+     export LM_LICENSE_FILE=/home/delini/questasim/questasim/LICENSE.dat
+     ```
+  - Download SFK from [here](http://stahlworks.com/downloads.html): file SFK for Linux (i686 64 bits executable)
+  - Move file `sfk-linux-64.exe` into `/questasim` then `chmod +x sfk-linux-64.exe`
+  - Run sfk (install everything if have request)
+    ```
+    sudo wine ./sfk-linux-64.exe rep -yes -pat -bin /5589E557565381ECD00000008B5508/31C0C357565381ECD00000008B5508/ -bin /5589E557565381ECD8000000E8000000005B81C3/33C0C357565381ECD8000000E8000000005B81C3/ -bin /41574989FF415641554154554889CD534489C3/33C0C389FF415641554154554889CD534489C3/ -dir /home/delini/questasim/questasim
+    ```
+   - Then Ctrl + C to interupt process → done
+   - Install LSB `sudo apt install lsb` then run `sudo ./linux_x86_64/mgls/bin/lmgrd -c ./LICENSE.dat`
+   - **Possible error and how to fix**
+      1. Can’t make directory usr/tmp/.flexlm, errno: 2(No such file or directory)
+        > `sudo ln -s /tmp /usr/tmp`
+      2. (lmgrd) Failed to open the TCP port number in the license
+        > Open file LICENSE.dat and replace 27001 to 27002 (if still failed, 2700(3, 4, 5, …))
+      3. Cannot open lock file. errno=11 (/var/tmp/lockmgcld): Resource temporarily unavailable
+        > ```
+        > cd /var/tmp
+        > ls
+        > sudo mv lockmgcld lockmgcld.bak
+        > ```
+        > Open LICENSE.dat and replace 27001 to 27002 (if still failed, 2700(3, 4, 5, …))
+- Create an alias in `~./zshrc` to use alias (instead of remember such a long command), for example
+  ```
+  alias get_vsim="cd /home/delini/questasim/questasim && sudo ./linux_x86_64/mgls/bin/lmgrd -c ./LICENSE.dat"
+  ```
 
 # Vivado installation
 1. Install some packet
