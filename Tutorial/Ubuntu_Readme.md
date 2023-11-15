@@ -62,6 +62,7 @@ Check [git_tutorial](https://docs.github.com/en/authentication/connecting-to-git
       	zsh-autosuggestions
       	)
      ```
+- Set zsh as default terminal: `chsh -s $(which zsh)`
 
 # Install ibus-bamboo for Vietnamese typing
 - Install ibus-bamboo
