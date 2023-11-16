@@ -87,7 +87,7 @@ Check [git_tutorial](https://docs.github.com/en/authentication/connecting-to-git
 - Close and reopen your bash --> Successful
 
 # Questasim installation and crack
-- Download zip file questasim (I put in on onedrive) then extract it
+- Download zip file questasim (I put in on [onedrive](https://husteduvn-my.sharepoint.com/:u:/g/personal/linh_np206203_sis_hust_edu_vn/EdDv81QSagBApJ9eqKavY4cBGwYQ5YLptkPu2gEICqtLcw?e=R8oZFp)) then extract it
 - Navigate to `Mentor Graphics QuestaSim 10.7c Linux64` folder, then run:
   ```
   chmod +x install.linux64
