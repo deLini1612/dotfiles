@@ -106,7 +106,7 @@ Check [git_tutorial](https://docs.github.com/en/authentication/connecting-to-git
         > Note: Install everything if have request
    - Remove comment 2 first lines in LICENSE.TXT
    - Add path of your `questasim/` folder to 2nd line as example `VENDOR mgcld /home/delini/questasim/questasim` then Save as `LICENSE.dat` into folder `/questasim`
-   - Add path to `~./zshrc` as the following then `source ~./zshrc` 
+   - Add path to `~/.zshrc` as the following then `source ~/.zshrc` 
      ```
      export PATH=$PATH:/home/delini/questasim/questasim/bin/
      export LM_LICENSE_FILE=/home/delini/questasim/questasim/LICENSE.dat
